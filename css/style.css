@@ -1,0 +1,231 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: #fff;
+	font-family: 'Roboto', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*div {
+	border: 1px solid Chocolate;
+}*/
+/*grid styling*/
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+.grid {
+	width: 100%;
+}
+.row {
+	margin-bottom: 1em;
+}
+.grid, .row, [class*="-col"] {
+	padding: 0;
+	margin: 0;
+}
+.grid:after, .row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.row:last-child {
+	margin-bottom: 0;
+}
+[class*="-col"] {
+	float: left;
+	margin-right: 1.6%;
+}
+[class*="-col"]:last-child {
+	margin-right: 0;
+}
+.eight-col {
+	width: 100%;
+}
+
+.seven-col {
+  	width: 87.3%;
+}
+
+.six-col {
+  	width: 74.6%;
+}
+
+.five-col {
+  	width: 61.9%;
+}
+
+.four-col {
+  	width: 49.2%;
+}
+
+.three-col {
+  	width: 36.5%;
+}
+
+.two-col {
+  	width: 23.8%;
+}
+
+.one-col {
+  	width: 11.1%;
+}
+
+[class*="-col"] {
+	background-color: green;
+}
+.grid {
+	background-color: black;
+}
+.first-column {
+	position: relative;
+	height: 1em;
+}
+.name-contact {
+	background: url('../img/IMG_2738.jpg');
+	background-size: cover;
+	background-position: center center;
+	height: 100%;
+	width: 49.2%;
+	padding-top: 20%;
+	position: fixed;
+}
+.name {
+	width: 55%;
+	min-width: 375px;
+	max-width: 450px;
+	margin: 0 auto;
+	padding-top: .7em;
+	padding-bottom: .5em;
+	background-color: rgba(16, 169, 190, .6);
+	margin-bottom: 1.5em;
+	text-align: center;
+	font-family: 'Special Elite';
+	font-size: 2.4em;
+	letter-spacing: .05em;
+}
+.title {
+	height: 3em;
+	width: 40%;
+	margin: 0 auto;
+	background-color: rgba(16, 169, 190, .6);
+	text-align: center;
+	margin-bottom: 5em;
+	font-family: 'Open Sans';
+}
+.sites {
+	height: 100%;
+	background: url('../img/right_background.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+.social-box {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+.social-box > ul > li {
+	display: inline-block;
+}
+.screen1 {
+	background: url('../img/About-Me-screen.jpg') center center;
+}
+.screen2 {
+	background: url('../img/karma_clone_screen.jpg') center center;
+}
+.screen3 {
+	background: url('../img/blog_clone_screen.jpg') center center;
+}
+.screen1, .screen2, .screen3 {	
+	background-size: cover;
+	height: 400px;
+	width: 95%;
+	max-width: 570px;
+	margin: 4em auto;
+}
+.screen1:hover, .screen2:hover, .screen3:hover {
+	border: 5px solid black;
+}
+.sites a {
+	cursor: context-menu;
+}
+/*  GO FULL WIDTH AT LESS THAN 768 PIXELS */
+
+@media all and (max-width: 768px) {
+  [class*="-col"] {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .name-contact {
+  	width: 100%;
+  	position: relative;
+  	height: 30em;
+  }
+  .first-column {
+  	height: 30em;
+  }
+
+  .row:last-child > [class*="-col"]:last-child {
+    margin-bottom: 0;
+  }
+
+  [class*="-offset"] {
+    margin-left: 0;
+  }
+
+  .row {
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 1100px) {
+	.screen1, .screen2, .screen3 {
+		height: 300px;
+		max-width: 428px;
+		margin-top: 3em auto;
+	}
+}
