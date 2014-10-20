@@ -220,10 +220,11 @@ table {
   .name-contact {
   	width: 100%;
   	position: relative;
-  	height: 30em;
+  	height: 550px;
+  	padding-top: 15%;
   }
   .first-column {
-  	height: 30em;
+  	height: 550px;
   }
 
   .row:last-child > [class*="-col"]:last-child {
@@ -246,3 +247,28 @@ table {
 		margin-top: 3em auto;
 	}
 }
+
+@media all and (max-width: 395px) {
+	.screen1, .screen2, .screen3 {
+		height: 210px;
+		max-width: 300px;
+		margin-top: 3em auto;
+	}
+	.name {
+		min-width: 290px;
+		font-size: 27px;
+		padding-top: 20px;
+		padding-bottom: 11px;
+	}
+	.title {
+		min-width: 140px;
+		font-size: 16px;
+		padding: 9px 0;
+	}
+	.social-box > ul > li > a {
+		font-size: 14px;
+		margin
+	}
+	.social-box > ul > li {
+		margin: 0 4px;
+}	
