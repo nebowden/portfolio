@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 //underscoring navigation bar selection in wide view
-	if($(window).width() > 768) {
+	if($(window).width() > 800) {
 		$(".nav-bar a").click(function(event){
 			event.preventDefault();
 			$(this).closest(".nav-bar").find("li").removeClass("underlined");
@@ -9,20 +9,20 @@ $(document).ready(function(){
 		});
 	};
 
-	if($(window).width() < 768) {
+	if($(window).width() < 800) {
 			$(".about-me").removeClass("underlined");
 		};
 
 //showing top button on scroll down
 	$(window).scroll(function(event){
 	event.preventDefault();
-	if($(window).width() > 768) {
+	if($(window).width() > 800) {
 		$(".top-link").addClass("hidden");	
 	};
 	if($(window).scrollTop() < 500) {
 	$(".top-link").addClass("hidden");
 	};
-	if($(window).scrollTop() > 500 && ($(window).width() < 768)) {
+	if($(window).scrollTop() > 500 && ($(window).width() < 800)) {
 	$(".top-link").removeClass("hidden");
 	};
 
@@ -82,6 +82,10 @@ $(document).ready(function(){
 			    	scrollTop: $(".contact-container").offset().top
 					}, 500);};
 	});
+
+	if (!('ontouchstart' in window) || (navigator.maxTouchPoints == 0) || (navigator.msMaxTouchPoints == 0)) {
+      		$("html").addClass("no-touch");
+	};
 
 
 });
