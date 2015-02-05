@@ -7,6 +7,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,800,400,600|Special+Elite' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/font-awesome-4.2.0/css/font-awesome.min.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/app.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -20,22 +23,68 @@
 					<div class="title">
 						<h2>Web Developer</h2>
 					</div>
-					<div class="social-box">
+					<div class="nav-bar">
 						<ul>
-							<li><a href="https://twitter.com/nebowden" target="_blank">twitter</a></li>
-							<li><a href="https://plus.google.com/u/0/112812806244440434898/posts/p/pub" target="_blank">google+</a></li>
-							<li><a href="https://github.com/nebowden" target="_blank">github</a></li>
+							<li class="about-me underlined"><a href="#" class="about-me-link">about me</a></li>
+							<li><a href="#" class="portfolio-link">portfolio</a></li>
+							<li><a href="#" class="contact-link">contact</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
-			<div class="four-col sites">
-				<a href="http://codepen.io/neb/full/lqnDt" class="screen1" target="_blank"></a>
-				<a href="https://nebowden.github.io/fewd_landing_page_clone/index.html" class="screen2" target="_blank"></a>
-				<a href="http://codepen.io/neb/full/LpbAK" class="screen3" target="_blank"></a>
+			<div class="four-col second-column">
+				<div class="about-contact-container">
+					<div class="about-me-container">
+						<h2>about me</h2>
+						<img src="img/portrait1.jpg" class="portrait">
+						<div class="about-me-text">
+						<p>Hi, I'm Nathan. I'm a web developer in Austin, Texas, home of bats, blistering heatwaves and festivals for every day of the year. I'm a graduate of <a href="http://www.thinkful.com/" target="_blank">Thinkful's</a> Front End Web Development course, through which I learned the fundamentals of HTML, CSS, JavaScript, jQuery and AJAX.</p>
+						<p>Before I began coding, I had a 15-year career as a lawyer, having worked 8 of those years in-house for a large technology company in the Austin area. After 15 years as a lawyer, I began to want something new, different and creative, and found that web development was a great fit for the part of me that loved the logic of law and the part of me that wanted to do something a little more creative.</p>
+						<p>In my spare time, I like to play guitar, cook, take photographs, draw, read all sorts of books from thrillers to sci-fi to non-fiction, listen to comedy podcasts and go to live comedy shows. I also grew up ten minutes from the Texas Rangers' baseball stadium, so I've got an innate love of the team.</p>
+						</div>
+					</div>
+					
+					<div class="contact-container">
+						<h2>contact</h2>
+						<div class="contact-text">
+							<p>If you like my work and are interested in hiring me for your project, or if you just want to talk Texas Rangers baseball or chat about the current state of corporate law, please feel free to contact me using one of the methods below. </p>
+							<p>If you prefer instead to talk to a real live human, you can reach me at (512)779-4606. I'm generally available between 8:00am and 2:00pm Central Time.</p>
+						</div>
+						<div class="contact-links">
+							<ul>
+								<li><a href="mailto:nathanebowden@gmail.com">
+									<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+									</span>
+								</a></li>
+								<li><a href="https://twitter.com/nebowden" target="_blank">
+									<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+									</span>
+								</a></li>
+								<li><a href="https://plus.google.com/u/0/112812806244440434898/posts/p/pub" target="_blank">
+									<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+									</span>
+								</a></li>
+								<li><a href="https://github.com/nebowden" target="_blank">
+									<span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-github fa-stack-1x fa-inverse"></i>
+									</span>
+								</a></li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+				<div class="portfolio-container hidden">
+					<h2>portfolio</h2>
+					<a href="http://nebowden.github.io/comedy-quiz/" class="screen1 screen-pic" target="_blank"></a>
+					<a href="http://nebowden.github.io/shopping-list/" class="screen2 screen-pic" target="_blank"></a>
+					<a href="http://nebowden.github.io/locsy/" class="screen3 screen-pic" target="_blank"></a>
+				</div>
+				<a href="#" class="top-link hidden">
+					<i class="fa fa-chevron-up fa-3x"></i>
+				</a>
 			</div>
+			
 		</div>
-
 	</section>
 
 </body>
