@@ -383,7 +383,7 @@ html, body, .grid, .row {
 	}
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 800px) {
   	[class*="-col"] {
     	width: 100%;
     	margin-bottom: 1em;
